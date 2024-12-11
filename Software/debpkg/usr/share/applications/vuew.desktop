@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Vivid Unit Extender Dashboard
+Exec=/usr/bin/vuew
+Icon=/usr/share/icons/hicolor/48x48/apps/vuew.png
+Terminal=false
+Type=Application
+Categories=System

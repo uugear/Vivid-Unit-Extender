@@ -1,0 +1,7 @@
+Package: vue
+Version: 1.00
+Section: base
+Architecture: arm64
+Maintainer: support@uugear.com
+Installed-Size: 160
+Description: Command line and GUI programs for managing Vivid Unit Extender.

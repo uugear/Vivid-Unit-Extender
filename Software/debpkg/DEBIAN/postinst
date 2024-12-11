@@ -1,0 +1,26 @@
+#!/bin/sh
+set -e
+chmod 544 /usr/bin/vue
+chmod 544 /usr/bin/vuew
+chmod 544 /usr/bin/vue_hb
+chmod 755 /etc/init.d/vue_hb
+update-rc.d vue_hb defaults
+chmod 744 /usr/share/applications/vuew.desktop
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_reset.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_temp_cond1.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_auto_on.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_temp_cond2.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_power_cut.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_temp_cond3.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_watchdog.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_vin_cali.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_overvoltage.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_vout_cali.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_undervoltage.png
+chmod 644 /usr/share/icons/hicolor/48x48/apps/vuew_iout_cali.png
+echo 'Starting Vivid Unit Extender heartbeat daemon...'
+/etc/init.d/vue_hb stop
+/etc/init.d/vue_hb start &
+echo 'Done'
+exit 0
